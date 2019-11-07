@@ -1,0 +1,50 @@
+[   
+    {
+        "id": 1,
+        "image": "../images/andy-dwyer.jpg"
+    },
+    {
+        "id": 2,
+        "image": "../images/ann-perkins.jpg"
+    },
+    {
+        "id": 3,
+        "image": "../images/april-ludgate.jpg"
+    },
+    {
+        "id": 4,
+        "image": "/images/ben-wyatt.jpg"
+    },
+    {
+        "id": 5,
+        "image": "/images/chris-traeger.jpg"
+    },
+    {
+        "id": 6,
+        "image": "/images/craig-middlebrooks.jpg"
+    },
+    {
+        "id": 7,
+        "image": "/images/donna-meagle.jpg"
+    },
+    {
+        "id": 8,
+        "image": "/images/garry-gergich.jpg"
+    },
+    {
+        "id": 9,
+        "image": "/images/leslie-knope.jpg"
+    },
+    {
+        "id": 10,
+        "image": "/images/mark-brendanawicz.jpg"
+    },
+    {
+        "id": 11,
+        "image": "/images/ron-swanson.jpg"
+    },
+    {
+        "id": 12,
+        "image": "/images/tom-haverford.jpg"
+    }
+]
