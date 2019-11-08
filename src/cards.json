@@ -1,50 +1,62 @@
 [   
     {
         "id": 1,
-        "image": "../images/andy-dwyer.jpg"
+        "image": "images/andy-dwyer.jpg",
+        "name": "Andy Dwyer"
     },
     {
         "id": 2,
-        "image": "../images/ann-perkins.jpg"
+        "image": "images/ann-perkins.jpg",
+        "name": "Ann Perkins"
     },
     {
         "id": 3,
-        "image": "../images/april-ludgate.jpg"
+        "image": "images/april-ludgate.jpg",
+        "name": "April Ludgate"
     },
     {
         "id": 4,
-        "image": "/images/ben-wyatt.jpg"
+        "image": "images/ben-wyatt.jpg",
+        "name": "Ben Wyatt"
     },
     {
         "id": 5,
-        "image": "/images/chris-traeger.jpg"
+        "image": "images/chris-traeger.jpg",
+        "name": "Chris Traeger"
     },
     {
         "id": 6,
-        "image": "/images/craig-middlebrooks.jpg"
+        "image": "images/craig-middlebrooks.jpg",
+        "name": "Craig Middlebrooks"
     },
     {
         "id": 7,
-        "image": "/images/donna-meagle.jpg"
+        "image": "images/donna-meagle.jpg",
+        "name": "Donna Meagle"
     },
     {
         "id": 8,
-        "image": "/images/garry-gergich.jpg"
+        "image": "images/garry-gergich.jpg",
+        "name": "Garry Gergich"
     },
     {
         "id": 9,
-        "image": "/images/leslie-knope.jpg"
+        "image": "images/leslie-knope.jpg",
+        "name": "Leslie Knope"
     },
     {
         "id": 10,
-        "image": "/images/mark-brendanawicz.jpg"
+        "image": "images/mark-brendanawicz.jpg",
+        "name": "Mark Brendanawicz"
     },
     {
         "id": 11,
-        "image": "/images/ron-swanson.jpg"
+        "image": "images/ron-swanson.jpg",
+        "name": "Ron Swanson"
     },
     {
         "id": 12,
-        "image": "/images/tom-haverford.jpg"
+        "image": "images/tom-haverford.jpg",
+        "name": "Tom Haverford"
     }
 ]

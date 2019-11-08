@@ -1,21 +1,22 @@
-import React, { Component }from "react";
+import React, { Component } from "react";
+import style from "./style.css";
 
 class Card extends Component {
-    
-    componentDidMount = () => {
-        this.id = this.props.id
+
+    componentDidMount() {
+        this.id = this.props.id;
     }
     
-    render = () => {
+    render() {
         return (
-            <div className="card">
-                <div className="img-container">
-                    <img 
-                        src={this.props.image} 
-                        alt="img"
-                        id={this.props.id}
-                        onClick={this.props.handleCardClick} />
-                </div>
+            <div className="character">
+                <img
+                    className="clicked"
+                    src={this.props.image}
+                    alt="character"
+                    id={this.props.id}
+                    onClick={this.props.handleCardClick}
+                    />
             </div>
         );
     }

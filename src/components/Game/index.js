@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import Card from "../Card";
+import Container from "../Container";
+import Row from "../Row";
+import Column from "../Column";
 import cards from "../../cards.json";
+console.log(cards);
 
 class Game extends Component {
     state = {
@@ -13,6 +17,7 @@ class Game extends Component {
     // Randomize the cards before the component mounts
     componentWillMount() {
         this.randomizeCards();
+        console.log(this.state);
     }
 
     // Function to reset the game state
@@ -49,10 +54,9 @@ class Game extends Component {
     }
 
     // Function to handle the click events
-    handleCardClick = (event) => {
-        console.log(this.state.selected.length);
+    handleCardClick = event => {
         let cardId = event.target.id;
-        if (this.state.selected.includes(cardId)) {
+        if (this.state.clicked.includes(cardId)) {
             this.loseGame();
         } else {
             this.state.clicked.push(cardId);
@@ -62,7 +66,8 @@ class Game extends Component {
                 score,
                 topScore
             });
-            if (this.state.selected.length === 12) {
+            console.log(this.state);
+            if (this.state.clicked.length === 12) {
                 this.winGame();
             }
             this.randomizeCards();
@@ -71,23 +76,22 @@ class Game extends Component {
 
     render() {
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col">
-                        {this.state.cards.map((card, i) => {
-                            return (
-                                <Card
-                                    clickCard={this.handleCardClick.bind(this)}
-                                    id={card.id}
-                                    key={card.id}
-                                    image={card.image}
-                                    clicked={this.clicked}
-                                />
-                            );
-                        })}
-                    </div>
-                </div>
-            </div>
+            <Container>
+                <Row>
+                    <Column>
+                        {this.state.cards.map((card, i)  => {
+                            return(
+                            <Card
+                                handleCardClick={this.handleCardClick.bind(this)}
+                                id={card.id}
+                                key={card.id}
+                                image={card.image}
+                                clicked={card.clicked}
+                            />
+                        )})}
+                    </Column>
+                </Row>
+            </Container>
         );
     }
 }

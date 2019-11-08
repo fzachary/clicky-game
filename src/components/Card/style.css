@@ -1,0 +1,15 @@
+img {
+    height: 255px;
+    width: 255px;
+    margin: 8px;
+    border-radius: 20px;
+    float: left;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;    
+}
+
+img:hover {
+    opacity: 0.6;
+}
