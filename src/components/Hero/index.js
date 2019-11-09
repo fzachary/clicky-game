@@ -1,11 +1,12 @@
 import React from "react";
+import style from "./style.css";
 
 const Hero = props => {
     return (
-        <div className="hero text-center" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
+        <div className="hero text-center">
             <header className="header">
-                <h1>Clicky Game!!!</h1>
-                <h2>Click on an image to earn points, but don't click on the same image more than once!</h2>
+                <h1>Parks & Rec Clicky Game!</h1>
+                <h2>Click on a character to earn points, but don't click on the same character more than once!</h2>
             </header>
         </div>
     );

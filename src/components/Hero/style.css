@@ -1,0 +1,23 @@
+.hero {
+    background-image: url("./wood-bg.jpg");
+    min-height: 400px;
+    color: white;
+    padding: 140px 20px;
+    padding-bottom: 140px;
+}
+
+.header h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 4rem;
+}
+
+.header h2 {
+    display: block;
+    font-size: 1.5rem;
+    scroll-margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}

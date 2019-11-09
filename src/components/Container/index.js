@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./style.css";
 
 function Container({ children }) {
     return (

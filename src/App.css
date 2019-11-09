@@ -1,22 +1,118 @@
-.App {
-  text-align: center;
+@media (max-width: 420px) {
+  .navbar li:first-child {
+      width:25%
+  }
+
+  .navbar li:nth-child(2) {
+      width: 35%
+  }
+
+  .navbar li:last-child {
+      width: 40%
+  }
 }
 
-.App-logo {
-  height: 40vmin;
+.header {
+  color: #fff;
+  max-height: 300px;
+  padding: 120px 20px;
+  padding-bottom: 120px;
+  text-align: center
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header h1 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 4rem
 }
 
-.App-link {
-  color: #09d3ac;
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90%;
+  margin: 0 auto
+}
+
+@media (min-width: 1100px) {
+  .container {
+      padding-left:100px;
+      padding-right: 100px;
+      width: 1100px
+  }
+}
+
+.character {
+  background-size: cover;
+  background-position: 50%;
+  margin: 8px 16px;
+  border: 5px solid #f1f1f1;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+  cursor: pointer;
+  float: left;
+}
+
+.character:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
+  -webkit-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s
+}
+
+img {
+  height: 183px;
+  width: 183px;
+}
+
+@media (max-width: 750px) {
+  .character {
+      margin:10px
+  }
+}
+
+@media (max-width: 500px) {
+  .character {
+      margin:10px
+  }
+}
+
+.footer {
+  background: brown;
+  height: 69px;
+  position: relative;
+  color: #fff;
+  overflow: auto
+}
+
+.footer a {
+  margin-left: 9px;
+}
+
+.footer>.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #444;
+  padding: 8px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer>.bottom>img {
+  width: 20px;
+  position: relative;
+  top: 3px;
+  left: 2px
+}
+
+#root,#root>div,body,html {
+  height: 100%;
+  margin: 0;
+  padding: 0
 }

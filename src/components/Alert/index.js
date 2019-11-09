@@ -6,7 +6,7 @@ const Alert = props => {
             role="alert"
             className={`alert alert-${props.type} fade in`}
         >
-            {props.children}
+            GAME OVER, TRY AGAIN!
         </div>
     );
 }

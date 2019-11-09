@@ -7,6 +7,7 @@ import Container from "./components/Container";
 import Row from "./components/Row";
 import Column from "./components/Column";
 import cards from "./cards.json";
+import style from "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +16,8 @@ class App extends Component {
       score: 0,
       topScore: 0,
       cards: cards,
-      clicked: []
+      clicked: [],
+      message: "Click a card to begin!"
     };
   }
 
@@ -29,21 +31,24 @@ class App extends Component {
   resetGame = () => {
       this.setState({
           score: 0,
-          clicked: []
+          clicked: [],
+          message: "Click a card to begin!"
       });
       this.randomizeCards();
   }
 
   // Function for if the user loses the game
   loseGame = () => {
-      alert("GAME OVER!");
-      this.resetGame();
+      this.setState({
+        message: "GAME OVER!"
+      });
   }
 
   // function for if the user wins the game
   winGame = () => {
-      alert("YOU WIN! TREAT YO' SELF!");
-      this.resetGame();
+      this.setState({
+        message: "YOU WIN! TREAT YO' SELF!"
+      });
   }
 
   // After a card is clicked, shuffle the cards
@@ -63,17 +68,25 @@ class App extends Component {
       let cardId = event.target.id;
       if (this.state.clicked.includes(cardId)) {
           this.loseGame();
+          this.setState({
+            clicked: [],
+            score: 0
+          });
       } else {
           this.state.clicked.push(cardId);
           let score = this.state.score + 1;
           let topScore = score > this.state.topScore ? score : this.state.topScore;
           this.setState({
               score,
-              topScore
+              topScore,
+              message: "Good choice!"
           });
-          console.log(this.state);
           if (this.state.clicked.length === 12) {
               this.winGame();
+              this.setState({
+                clicked: [],
+                score: 0
+              });
           }
           this.randomizeCards();
       }
@@ -84,7 +97,9 @@ class App extends Component {
       <main>
         <Navbar 
           score={this.state.score}
-          topScore={this.state.topScore}/>
+          topScore={this.state.topScore}
+          message={this.state.message}
+        />
         <Hero />
         <Container>
           <Row>

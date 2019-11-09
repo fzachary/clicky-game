@@ -1,17 +1,20 @@
 import React, { Component } from "react";
 import Score from "../Score";
+import Status from "../Status";
+import style from "./style.css";
 
 class Navbar extends Component {
 
     render() {
 
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg">
                 <ul className="navbar-nav ul-auto">
                     <li className="navbar-brand">
-                        <a className="navbar-brand" href="/">Clicky Game</a>
+                        <a href="/">Clicky Game</a>
                     </li>
-                    <li className="nav-item text-light">Click an image to begin!</li>
+                    <Status 
+                        message={this.props.message}/>
                     <Score 
                         score={this.props.score}
                         topScore={this.props.topScore}/>
