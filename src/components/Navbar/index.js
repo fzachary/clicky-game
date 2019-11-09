@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Score from "../Score";
 import Status from "../Status";
-import style from "./style.css";
+import "./style.css";
 
 class Navbar extends Component {
 

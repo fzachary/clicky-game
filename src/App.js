@@ -7,7 +7,7 @@ import Container from "./components/Container";
 import Row from "./components/Row";
 import Column from "./components/Column";
 import cards from "./cards.json";
-import style from "./App.css";
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -24,7 +24,6 @@ class App extends Component {
   // Randomize the cards before the component mounts
   componentWillMount() {
     this.randomizeCards();
-    console.log(this.state);
   }
 
   // Function to reset the game state
