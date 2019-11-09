@@ -10,7 +10,7 @@ If you are good enough to win, a special "Parks and Rec" message will appear at 
 
 Good Luck!
 
-PLAY CLICKY-GAME [HERE](https://fzachary/github.io/clicky-game)!
+PLAY CLICKY-GAME [HERE](https://wizardly-fermi-326720.netlify.com)!
 
 _________________________________________________________________
 Clicky-game is built with React.js, thus, the application is component-based, able to keep track of changing events using "state", and updating the page rendering dynamically and without refreshing.
